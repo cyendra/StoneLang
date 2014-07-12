@@ -7,7 +7,7 @@ using System.IO;
 
 namespace stone
 {
-    class ParseException : IOException
+    class ParseException : Exception
     {
         public ParseException(string msg) : base(msg) { }
         public ParseException(Token t) : this("", t) { }

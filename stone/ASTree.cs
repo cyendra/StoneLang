@@ -6,10 +6,16 @@ using System.Threading.Tasks;
 
 namespace stone
 {
-    abstract class ASTree
+    abstract class ASTree : IEnumerable<ASTree>
     {
-        public abstract ASTree child(int i);
+        public abstract ASTree Child(int i);
         public abstract int NumChildren();
-        public abstract string location();
+        public abstract string Location();
+        public abstract IEnumerator<ASTree> Children();
+      
+        public IEnumerator<ASTree> GetEnumerator()
+        {
+            return Children();
+        }
     }
 }

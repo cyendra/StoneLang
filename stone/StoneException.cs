@@ -9,6 +9,6 @@ namespace stone
     class StoneException : Exception
     {
         public StoneException(string m) : base(m) { }
-        public StoneException(string m, ASTree t) : base(m + " " + t.location()) { }
+        public StoneException(string m, ASTree t) : base(m + " " + t.Location()) { }
     }
 }

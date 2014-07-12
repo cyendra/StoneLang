@@ -45,7 +45,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ASTLeaf.cs" />
+    <Compile Include="ASTList.cs" />
     <Compile Include="ASTree.cs" />
+    <Compile Include="BinaryExpr.cs" />
     <Compile Include="InputForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -53,6 +55,8 @@
       <DependentUpon>InputForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Lexer.cs" />
+    <Compile Include="Name.cs" />
+    <Compile Include="NumberLiteral.cs" />
     <Compile Include="ParseException.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
