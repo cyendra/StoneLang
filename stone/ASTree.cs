@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace stone
 {
-    class ASTree
+    abstract class ASTree
     {
         public abstract ASTree child(int i);
         public abstract int NumChildren();

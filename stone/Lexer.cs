@@ -11,7 +11,7 @@ namespace stone
     class Lexer
     {
         private StringReader reader;
-        private static const int EMPTY = -1;
+        private static readonly int EMPTY = -1;
         private int lastChar = EMPTY;
 
         public Lexer(StringReader r) { reader = r; }
