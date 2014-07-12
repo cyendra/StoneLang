@@ -28,17 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.codeBox = new System.Windows.Forms.TextBox();
             this.runBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // codeBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(13, 13);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(556, 351);
-            this.textBox1.TabIndex = 0;
+            this.codeBox.AcceptsReturn = true;
+            this.codeBox.AcceptsTab = true;
+            this.codeBox.Location = new System.Drawing.Point(13, 13);
+            this.codeBox.Multiline = true;
+            this.codeBox.Name = "codeBox";
+            this.codeBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.codeBox.Size = new System.Drawing.Size(556, 351);
+            this.codeBox.TabIndex = 0;
             // 
             // runBtn
             // 
@@ -48,6 +51,7 @@
             this.runBtn.TabIndex = 1;
             this.runBtn.Text = "Run";
             this.runBtn.UseVisualStyleBackColor = true;
+            this.runBtn.Click += new System.EventHandler(this.runBtn_Click);
             // 
             // InputForm
             // 
@@ -55,7 +59,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(581, 405);
             this.Controls.Add(this.runBtn);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.codeBox);
             this.Name = "InputForm";
             this.Text = "Input";
             this.ResumeLayout(false);
@@ -65,7 +69,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox codeBox;
         private System.Windows.Forms.Button runBtn;
     }
 }
